@@ -9,14 +9,6 @@ end
 def turn(board)
   puts "Please enter 1-9:"
 input = gets.strip
-=begin
-input_to_index(input)
-valid_move?(board, index)
-move(array, index)
-display_board(board)
-=end
-
-end
 
 def input_to_index(input)
    input.to_i - 1
