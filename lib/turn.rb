@@ -55,14 +55,14 @@ def valid_move?(board, index)
     end
   end
 
-=begin
+
   if (position_taken?(board, index)) == false && (on_board?(index) == true)
     return true
   else
     return false
   end
 end
-=end
+
 #Takes a users num and the board, and places the X or O char in that position
 def move(board, index, character = "X")
   board[index] = character
@@ -80,5 +80,4 @@ def turn (board)
   else
     turn(board)
   end
-end
 end
