@@ -11,15 +11,16 @@ def turn(board)
 input = gets.strip
 input_to_index(input)
 end
+
 def input_to_index(input)
    input.to_i - 1
 end
 
 def valid_move?(board, index)
 if board[index] == " "
-  true
+  false
 else
-    false
+    true
 
 end
 end
